@@ -1,0 +1,236 @@
+//=========================================================
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+//font-family: "Merryweather", serif;
+//=========================================================
+/* Tag Styles =============*/
+body {
+    color: #e0ffff;
+    background-color: #2c2c2c;
+}
+
+h1 {
+    color: #0077ff;
+}
+img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+//=========================================================
+// Form  all
+.form-group {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.form-control {
+    border: none;
+    outline: none;
+    color: aliceblue;
+
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin: 2% 0;
+    padding: 0.9rem;
+    border-radius: 4px;
+    color: aliceblue;
+    background-color: #2c2c2c;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    &::placeholder {
+        color: #9da0a0;
+        font-style: italic;
+    }
+}
+fieldset {
+    padding: 2px;
+    border: none;
+}
+form {
+    margin-top: 40px;
+}
+//=========================================================
+/* Class Styles =============*/
+
+.validation-errors {
+    text-align: center;
+    color: darkred;
+    font-weight: 600;
+}
+/* Class Styles Button =============*/
+.btn {
+    display: block;
+    margin: 2% auto;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #00aced;
+    padding: 0.6rem 2rem;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-shadow: 1px 2px 3px #303133;
+    box-shadow: 1px 3px 1px #9da0a0;
+    &:hover {
+        color: #0077ff;
+        box-shadow: none;
+    }
+}
+.delete {
+    background-color: red;
+    color: #fff;
+}
+
+.logout {
+    color: #ff0000;
+    &:active {
+        color: greenyellow;
+    }
+}
+
+.hash-tag {
+    display: inline-block;
+    padding: .1rem 1rem;
+    margin: .2rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    background-color: #0f9b0f;
+}
+
+.popular-tag {
+    display: inline-block;
+    margin: .2rem;
+    padding: .3rem;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #2c3e50;
+    cursor: pointer;
+}
+
+.banner {
+    z-index: 999;
+    padding: 60px;
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0f9b0f, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+//=========================================================
+// Fix classes
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: slategray;
+}
+.fix-top {
+    padding-top: 90px;
+}
+
+.fix-center {
+    display: block;
+    margin: 0 0 2% auto;
+    text-align: center;
+}
+//=========================================================
+// Modal Window
+.modal {
+    position: fixed;
+    top: 60px;
+    width: 600px;
+    padding: 1rem;
+    background: #fff;
+    z-index: 1000;
+    left: 50%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+//=========================================================
+.nav {
+    &-item {
+        display: inline-block;
+    }
+    &-link {
+        padding: .4rem;
+        margin: 0 .4rem;
+        border-radius: 4px;
+        background-color: #2c3e50;
+        color: #e0ffff;
+        &.active {
+            color: #e0ffff;
+            background-color: #5f5e5e;
+        }
+    }
+}
+
+strong,
+.bold {
+    font-weight: 500;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+//#app {
+//    //.circle-image {
+//    //    width: 300px;
+//    //    height: 300px; /* Ширина и высота */
+//    //    border-radius: 50%; /* Превращаем в круг */
+//    //    //background: url("./../assets/myfoto.jpg") no-repeat -50px 0; /* Параметры фона */
+//    //    //background-size: auto 400px; /* Высота фотографии равна высоте элемента */
+//    //    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
+//    //}
+//    //.my-foto {
+//    //    display: inline-block;
+//    //    vertical-align: middle;
+//    //    width: 300px;
+//    //    height: 300px; /* Ширина и высота */
+//    //    border-radius: 50%; /* Превращаем в круг */
+//    //}
+//
+//    .circle-image{
+//        display: inline-block;
+//        border-radius: 50%;
+//        overflow: hidden;
+//        width: 300px;
+//        height: 300px;
+//        box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3);
+//    }
+//    .circle-image img{
+//        width:100%;
+//        height:100%;
+//        object-fit: cover;
+//        transform: rotate(30deg);
+//    }
+//}
