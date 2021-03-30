@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel chat.html --open"
+    "serve": "parcel login.html --open"
   },
   "keywords": [],
   "author": "",
