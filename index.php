@@ -1,52 +1,45 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/scss/style.scss">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>ChatApp</title>
-</head>
+<?php
+include_once "header.php";
+?>
 <body>
 <div class="container">
     <div class="wrapper">
         <section class="form signup">
             <header>RealTime Chat App</header>
-            <form action="#">
-                <div class="error-text">This is an error message!!!</div>
+            <form action="#" enctype="multipart/form-data">
+                <div class="error-text"></div>
                 <div class="name-details">
                     <div class="field input">
                         <label>First Name</label>
-                        <input type="text" placeholder="First Name">
+                        <input type="text" name="fname" placeholder="First Name" required>
                     </div>
                     <div class="field input">
                         <label>Last Name</label>
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" name="lname" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="field input">
                     <label>Email Address</label>
-                    <input type="email" placeholder="Enter your email">
+                    <input type="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="field input">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter new password">
+                    <input type="password" name="password" placeholder="Enter new password" required>
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
                     <label>Select Image</label>
-                    <input type="file">
+                    <input type="file" name="image" required>
                 </div>
                 <div class="field button">
                     <input type="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Already signed up? <a href="login.html">Login now</a></div>
+            <div class="link">Already signed up? <a href="login.php">Login now</a></div>
         </section>
     </div>
 </div>
-<script src="app.js"></script>
+<script src="app.js" defer type="module"></script>
+<script src="/js/signup.js" defer type="module"></script>
 </body>
 </html>
