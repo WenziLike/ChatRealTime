@@ -11,8 +11,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #f7f7f7;
+    color: #333;
+    background-color: #2c2c2c;
     padding: 0 10px;
+}
+
+h1 {
+    color: #0077ff;
 }
 
 .wrapper {
@@ -27,6 +32,10 @@ body {
 /* Login & Signup Form CSS Start */
 .form {
     padding: 25px 30px;
+}
+
+.bold {
+    font-weight: 500;
 }
 
 .form header {
@@ -269,8 +278,11 @@ body {
 }
 
 .users-list a .status-dot {
+    position: relative;
+    left: -243px;
+    top: 15px;
     font-size: 12px;
-    color: #468669;
+    color: #30ee28;
     padding-left: 10px;
 }
 

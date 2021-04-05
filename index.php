@@ -11,7 +11,7 @@ include_once "header.php";
 <div class="container">
     <div class="wrapper">
         <section class="form signup">
-            <header>RealTime Chat App</header>
+            <header><h1>RealTime Chat App</h1></header>
             <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
                 <div class="name-details">
@@ -41,7 +41,7 @@ include_once "header.php";
                     <input type="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Already signed up? <a href="login.php">Login now</a></div>
+            <div class="link">Already signed up? <a href="login.php"><span class="bold">Login now</span></a></div>
         </section>
     </div>
 </div>

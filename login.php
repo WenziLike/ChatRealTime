@@ -9,7 +9,7 @@ if (isset($_SESSION['unique_id'])) {
 <body>
 <div class="wrapper">
     <section class="form login">
-        <header>Realtime Chat App</header>
+        <header><h1>RealTime Chat App</h1></header>
         <form action="#" method="POST" enctype="multipart/form-data">
             <div class="error-text"></div>
             <div class="field input">
@@ -25,7 +25,7 @@ if (isset($_SESSION['unique_id'])) {
                 <input type="submit" name="submit" value="Continue to Chat">
             </div>
         </form>
-        <div class="link">Not yet signed up? <a href="index.php">Signup now</a></div>
+        <div class="link">Not yet signed up? <a href="index.php"><span class="bold">Signup now</span></a></div>
     </section>
 </div>
 
