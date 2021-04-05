@@ -1,19 +1,20 @@
-const searchBarUser = document.querySelector('.users .search input'),
-    searchBtn = document.querySelector('.users .search button'),
-    usersList = document.querySelector('.users .users-list')
-
-if (searchBtn) {
-    searchBtn.addEventListener('click', () => {
-        searchBarUser.classList.toggle('active');
-        searchBarUser.focus();
-        searchBtn.classList.toggle('active');
-        searchBarUser.value = ''
-    })
+const searchBarUser = document.querySelector('.search input'),
+    searchIcon = document.querySelector('.search button'),
+    usersList = document.querySelector('.users-list')
+//=================================================================
+searchIcon.onclick = () => {
+    searchBarUser.classList.toggle("show");
+    searchIcon.classList.toggle("active");
+    searchBarUser.focus();
+    if (searchBarUser.classList.contains("active")) {
+        searchBarUser.value = "";
+        searchBarUser.classList.remove("active");
+    }
 }
-
+//=================================================================
 searchBarUser.onkeyup = () => {
     let searchTerm = searchBarUser.value
-    if (searchTerm != "") {
+    if (searchTerm !== "") {
         searchBarUser.classList.add('active')
     } else {
         searchBarUser.classList.remove('active')
@@ -32,8 +33,7 @@ searchBarUser.onkeyup = () => {
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
     xhr.send('searchTerm=' + searchTerm)
 }
-
-
+//=================================================================
 setInterval(() => {
     // Let's start Ajax
     let xhr = new XMLHttpRequest() // creating XML object

@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (isset($_SESSION['unique_id'])) {
+    header("location: users.php");
+}
+?>
+<?php
 include_once "header.php";
 ?>
 <body>
@@ -6,7 +12,7 @@ include_once "header.php";
     <div class="wrapper">
         <section class="form signup">
             <header>RealTime Chat App</header>
-            <form action="#" enctype="multipart/form-data">
+            <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
                 <div class="name-details">
                     <div class="field input">
@@ -29,7 +35,7 @@ include_once "header.php";
                 </div>
                 <div class="field image">
                     <label>Select Image</label>
-                    <input type="file" name="image" required>
+                    <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
                 </div>
                 <div class="field button">
                     <input type="submit" value="Continue to Chat">
@@ -39,7 +45,7 @@ include_once "header.php";
         </section>
     </div>
 </div>
-<script src="app.js" defer type="module"></script>
-<script src="/js/signup.js" defer type="module"></script>
+<script src="js/passwordShowHide.js"></script>
+<script src="js/signup.js"></script>
 </body>
 </html>

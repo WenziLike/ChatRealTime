@@ -1,11 +1,11 @@
 const form = document.querySelector('.login form'),
     continueBtn = form.querySelector('.button input'),
     errorText = form.querySelector('.error-text');
-
+//=================================================================
 form.onsubmit = (e) => {
     e.preventDefault() // preventing form from submitting
 }
-
+//=================================================================
 continueBtn.onclick = () => {
     // let's start Ajax
     let xhr = new XMLHttpRequest() // creating XML object

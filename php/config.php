@@ -1,6 +1,11 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "chatapp");
+$hostname = "localhost";
+$username = "root";
+$password = "";
+$dbname = "chatapp";
+
+$conn = mysqli_connect($hostname, $username, $password, $dbname);
 if (!$conn) {
-    echo "Database connected". mysqli_connect_error();
+    echo "Database connection error" . mysqli_connect_error();
 }
 ?>
